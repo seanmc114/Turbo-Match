@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spanish Tile Match</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <h1>Spanish Tile Match</h1>
+      <p class="subtitle">Match each picture to the correct Spanish word</p>
+    </header>
+
+    <section class="panel stats-panel">
+      <div class="stat"><span class="label">Matches:</span> <span id="matches">0</span></div>
+      <div class="stat"><span class="label">Moves:</span> <span id="moves">0</span></div>
+      <div class="stat"><span class="label">Time:</span> <span id="time">0</span>s</div>
+      <button id="restartBtn" class="btn">Restart</button>
+    </section>
+
+    <section class="panel instructions">
+      <p>Click <strong>one picture</strong> and <strong>one word</strong>. If they match, they stay revealed.</p>
+    </section>
+
+    <main class="game-wrap">
+      <div class="column">
+        <h2>Pictures</h2>
+        <div id="imageGrid" class="grid"></div>
+      </div>
+
+      <div class="column">
+        <h2>Words</h2>
+        <div id="wordGrid" class="grid"></div>
+      </div>
+    </main>
+
+    <section id="winBox" class="panel win-box hidden">
+      <h2>¡Muy bien!</h2>
+      <p>You matched them all.</p>
+      <p><strong>Final time:</strong> <span id="finalTime">0</span>s</p>
+      <p><strong>Total moves:</strong> <span id="finalMoves">0</span></p>
+      <button id="playAgainBtn" class="btn">Play Again</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
